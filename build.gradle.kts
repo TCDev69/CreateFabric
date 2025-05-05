@@ -85,6 +85,12 @@ repositories {
     maven("https://maven.saps.dev/releases") // FTB
     maven("https://maven.architectury.dev") // Architectury API
     maven("https://jm.gserv.me/repository/maven-public/") // Journey map
+
+    maven("https://cursemaven.com") { // Cursemaven
+        content {
+            includeGroup("curse.maven")
+        }
+    }
 }
 
 val ponder = file("Ponder")
@@ -135,9 +141,10 @@ dependencies {
 
     // FIXME - Use gradle.properties for these versions, make change to concealed for this
     modCompileOnly("dev.architectury:architectury-fabric:9.1.12")
-    modCompileOnly("dev.ftb.mods:ftb-chunks-fabric:2001.3.1")
-    modCompileOnly("dev.ftb.mods:ftb-teams-fabric:2001.3.0")
-    modCompileOnly("dev.ftb.mods:ftb-library-fabric:2001.2.4")
+    modImplementation("curse.maven:ftb-chunks-fabric-472657:6295697")
+    modImplementation("curse.maven:ftb-teams-fabric-438497:6119436")
+    modImplementation("curse.maven:ftb-library-fabric-438495:6466107")
+
 
     modCompileOnly("maven.modrinth:journeymap:$jmVersion")
     modCompileOnly("info.journeymap:journeymap-api:$jmApiVersion")
