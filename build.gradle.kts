@@ -129,9 +129,9 @@ dependencies {
     // compat
     modCompileOnly("cc.tweaked:cc-tweaked-$minecraftVersion-fabric-api:$ccVersion")
 
-    modCompileOnly("vazkii.botania:Botania:$botaniaVersion") { isTransitive = false }
+    //modCompileOnly("vazkii.botania:Botania:$botaniaVersion") { isTransitive = false }
     modCompileOnly("com.terraformersmc:modmenu:$modmenuVersion")
-    modCompileOnly("maven.modrinth:sandwichable:$sandwichableVersion")
+    //modCompileOnly("maven.modrinth:sandwichable:$sandwichableVersion")
     modCompileOnly("maven.modrinth:sodium:$sodiumVersion")
 
     modCompileOnly("dev.emi:trinkets:$trinketsVersion")
@@ -146,8 +146,9 @@ dependencies {
     modImplementation("curse.maven:ftb-library-fabric-438495:6466107")
 
 
-    modCompileOnly("maven.modrinth:journeymap:$jmVersion")
-    modCompileOnly("info.journeymap:journeymap-api:$jmApiVersion")
+    //modCompileOnly("maven.modrinth:journeymap:$jmVersion")
+    //modCompileOnly("info.journeymap:journeymap-api:$jmApiVersion")
+    modCompileOnly("curse.maven:journeymap-32274:6383888")
 
     // EMI
     modCompileOnly("dev.emi:emi-fabric:$emiVersion:api") { isTransitive = false }
